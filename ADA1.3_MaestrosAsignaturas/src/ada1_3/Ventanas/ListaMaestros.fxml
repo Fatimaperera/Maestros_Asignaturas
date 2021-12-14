@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ada1_3.Ventanas.ListaMaestrosController">
+   <children>
+      <TableView fx:id="tabla1" layoutX="13.0" layoutY="71.0" prefHeight="354.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="columCve" editable="false" prefWidth="92.0" text="Cve_Empleado" />
+          <TableColumn fx:id="ColumApellido1" editable="false" prefWidth="119.0" text="Apellido1" />
+            <TableColumn fx:id="ColumApellido2" editable="false" prefWidth="139.0" text="Apellido2" />
+            <TableColumn fx:id="columNombres" editable="false" prefWidth="147.0" text="Nombres" />
+            <TableColumn fx:id="btn" editable="false" maxWidth="100.0" minWidth="75.0" prefWidth="75.0" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnExportar" layoutX="501.0" layoutY="12.0" mnemonicParsing="false" onAction="#btnExportarAccion" prefHeight="39.0" prefWidth="80.0" text="Exportar" />
+   </children>
+</AnchorPane>

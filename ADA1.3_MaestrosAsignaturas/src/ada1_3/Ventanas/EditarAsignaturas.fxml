@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ada1_3.Ventanas.EditarAsignaturasController">
+   <children>
+      <Label layoutX="25.0" layoutY="23.0" text="Maestro:" />
+      <Label fx:id="lblMaestro" layoutX="88.0" layoutY="23.0" text="Label" />
+      <TableView fx:id="tabla1" layoutX="16.0" layoutY="86.0" prefHeight="338.0" prefWidth="312.0">
+        <columns>
+          <TableColumn fx:id="colum1" prefWidth="91.0" text="Cve_Asignatura" />
+          <TableColumn fx:id="colum2" prefWidth="118.0" text="Nombre" />
+            <TableColumn fx:id="colum3" prefWidth="89.0" text="Licenciatura" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tabla2" layoutX="400.0" layoutY="87.0" prefHeight="338.0" prefWidth="109.0">
+         <columns>
+            <TableColumn fx:id="colum4" prefWidth="91.0" text="Cve_Asignatura" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnAgregar" layoutX="341.0" layoutY="156.0" mnemonicParsing="false" onAction="#btnAgregarAccion">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/arrow_right.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="341.0" layoutY="224.0" mnemonicParsing="false" onAction="#btnEliminarAccion">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/arrow_left.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="16.0" layoutY="59.0" text="Lista de Asignaturas:" />
+      <Label layoutX="435.0" layoutY="59.0" text="Asignadas" />
+   </children>
+</AnchorPane>
